@@ -1,12 +1,11 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
+import Header from './components/Navbar/Navbar'
 
-export default function Applayout(){
+export default function Applayout() {
     return <>
-    <div style={{marginBottom:"40px"}}>
-        Hello from applayout
-    </div>
-    <Outlet></Outlet>
+        <Header></Header>
+        <Outlet></Outlet>
     </>
 
 }

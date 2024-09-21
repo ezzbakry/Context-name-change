@@ -11,8 +11,8 @@ import { Nameprovider } from './context/name';
 
 
 
+
 function App() {
-  const [count, setCount] = useState(0)
   const routes = createBrowserRouter([{
     path: "/", element: <Applayout></Applayout>, children: [
       { index: true, element: <Home /> }]
@@ -22,8 +22,10 @@ function App() {
   return (
     <>
       <Nameprovider value={{ name, setname }}>
-        <RouterProvider router={routes}>
-        </RouterProvider>
+       
+          <RouterProvider router={routes}>
+          </RouterProvider>
+        
       </Nameprovider>
     </>
   )
